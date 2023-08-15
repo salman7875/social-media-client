@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #777;
+
+  .wrapper {
+    padding: 0.5rem;
+    ul {
+      list-style: none;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      li {
+        a {
+          color: #fff;
+          .icon {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

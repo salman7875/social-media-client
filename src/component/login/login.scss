@@ -1,0 +1,45 @@
+.login {
+  background-color: #fffff9;
+  height: 100vh;
+
+  .wrapper {
+    padding: 2rem 3rem;
+    text-align: center;
+
+    .logo {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .lines {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      .control {
+        input {
+          width: 100%;
+          margin-bottom: 0.5rem;
+          padding: 0.5rem;
+        }
+      }
+
+      .action {
+        margin-top: 1rem;
+        button {
+          width: 100%;
+          padding: 0.5rem;
+          background-color: teal;
+          color: #fff;
+          border: none;
+          border-radius: 10px;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

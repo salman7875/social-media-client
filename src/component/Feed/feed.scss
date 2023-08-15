@@ -1,0 +1,32 @@
+.feed {
+  background-color: #000;
+  overflow-x: hidden;
+
+  .wrapper {
+    padding: 0.7rem;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      h1 {
+        color: #fff;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    .story {
+      display: flex;
+    }
+  }
+}
