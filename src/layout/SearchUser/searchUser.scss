@@ -1,0 +1,26 @@
+.searchUser {
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1rem;
+
+    .name {
+      font-size: 0.8rem;
+      color: #999;
+    }
+  }
+}

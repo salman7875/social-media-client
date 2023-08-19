@@ -1,0 +1,35 @@
+.search {
+  height: 100vh;
+  background-color: #000;
+
+  .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      background-color: #222;
+      font-size: 1.2rem;
+      border: none;
+      outline-color: #333;
+      color: #fff;
+    }
+
+    button {
+      border: none;
+      background-color: inherit;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+hr {
+  border: none;
+  border-bottom: 0.5px solid #888;
+}
