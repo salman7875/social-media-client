@@ -1,5 +1,6 @@
 import MenuIcon from '@mui/icons-material/Menu'
 import './profile.scss'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
   return (
@@ -27,11 +28,11 @@ const Profile = () => {
               <p>Posts</p>
             </li>
             <li>
-              <a href='#'>10</a>
+              <Link to='/followers'>10</Link>
               <p>Followers</p>
             </li>
             <li>
-              <a href='#'>10</a>
+              <Link to='/followings'>10</Link>
               <p>Followings</p>
             </li>
           </ul>
