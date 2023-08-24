@@ -1,11 +1,14 @@
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import './comments.scss'
+import { useNavigate } from 'react-router-dom'
 
 const Comments = () => {
+  const navigate = useNavigate()
+
   return (
     <div className='comments'>
       <header>
-        <ArrowBackIcon className='icon' />
+        <ArrowBackIcon className='icon' onClick={() => navigate('../')} />
         <span>Comments</span>
       </header>
       <hr />

@@ -1,11 +1,16 @@
-import SearchUser from '../../layout/SearchUser/SearchUser'
-import './userList.scss'
+import { useLocation } from "react-router-dom";
+import SearchUser from "../../layout/SearchUser/SearchUser";
+import "./userList.scss";
 
 const UserList = () => {
+  const location = useLocation();
+
+  const header = location.pathname === "/followers" ? "Followers" : "Followings";
+
   return (
-    <div className='userList'>
+    <div className="userList">
       <header>
-        <span>Followers</span>
+        <span>{header}</span>
       </header>
       <SearchUser />
       <SearchUser />
@@ -15,21 +20,8 @@ const UserList = () => {
       <SearchUser />
       <SearchUser />
       <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
-      <SearchUser />
     </div>
-  )
-}
+  );
+};
 
-export default UserList
+export default UserList;

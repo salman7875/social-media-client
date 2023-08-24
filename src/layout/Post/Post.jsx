@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined'
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
@@ -5,6 +6,8 @@ import SendOutlinedIcon from '@mui/icons-material/SendOutlined'
 import './post.scss'
 
 const Post = () => {
+  const navigate = useNavigate()
+
   return (
     <section className='post'>
       <div className='heading'>
@@ -29,7 +32,7 @@ const Post = () => {
       <div className='action'>
         <div className='top'>
           <FavoriteBorderIcon className='icon' />
-          <ChatBubbleOutlineOutlinedIcon className='icon' />
+          <ChatBubbleOutlineOutlinedIcon className='icon' onClick={() => navigate('/comment/1')} />
           <SendOutlinedIcon className='icon' />
         </div>
         <div className='bottom'>
